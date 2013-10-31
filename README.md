@@ -3,7 +3,7 @@ This guide walks you through writing a simple jQuery client that consumes a Spri
 What you'll build
 -----------------
 
-You'll build an jQuery client that consumes a Spring-based RESTful web service.
+You'll build a jQuery client that consumes a Spring-based RESTful web service.
 Specifically, the client will consume the service created in [Building a RESTful Web Servce][gs-rest-service].
 
 The jQuery client will be accessed at:
@@ -352,12 +352,12 @@ Congratulations! You've just developed an jQuery client that consumes a Spring-b
 [u-war]: /understanding/WAR
 [u-tomcat]: /understanding/Tomcat
 [u-application-context]: /understanding/application-context
-[`@Controller`]: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Controller.html
-[`SpringApplication`]: http://docs.spring.io/spring-boot/docs/0.5.0.M3/api/org/springframework/boot/SpringApplication.html
-[`@EnableAutoConfiguration`]: http://docs.spring.io/spring-boot/docs/0.5.0.M3/api/org/springframework/boot/autoconfigure/EnableAutoConfiguration.html
-[`@Component`]: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Component.html
-[`@ResponseBody`]: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/bind/annotation/ResponseBody.html
-[`MappingJackson2HttpMessageConverter`]: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/http/converter/json/MappingJackson2HttpMessageConverter.html
-[`DispatcherServlet`]: http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html
+[`@Controller`]: http://docs.spring.io/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/stereotype/Controller.html
+[`SpringApplication`]: http://docs.spring.io/spring-boot/docs/0.5.0.M5/api/org/springframework/boot/SpringApplication.html
+[`@EnableAutoConfiguration`]: http://docs.spring.io/spring-boot/docs/0.5.0.M5/api/org/springframework/boot/autoconfigure/EnableAutoConfiguration.html
+[`@Component`]: http://docs.spring.io/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/stereotype/Component.html
+[`@ResponseBody`]: http://docs.spring.io/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseBody.html
+[`MappingJackson2HttpMessageConverter`]: http://docs.spring.io/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/http/converter/json/MappingJackson2HttpMessageConverter.html
+[`DispatcherServlet`]: http://docs.spring.io/spring/docs/3.2.4.RELEASE/javadoc-api/org/springframework/web/servlet/DispatcherServlet.html
 [gs-rest-service]: /guides/gs-rest-service/
 
