@@ -191,8 +191,8 @@ $(function(){
     $.ajax({
         url: "/greeting"
     }).then(function(data) {
-       $('#greeting-id').append(data.id);
-       $('#greeting-content').append(data.content);
+       $('.greeting-id').append(data.id);
+       $('.greeting-content').append(data.content);
     });
 });
 ```
@@ -219,8 +219,8 @@ Next, you'll create the HTML page that will load the client into the user's web 
 
     <body>
         <div>
-            <p id="greeting-id">The ID is </p>
-            <p id="greeting-content">The content is </p>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
         </div>
     </body>
 </html>
@@ -230,7 +230,7 @@ For the most part, this is a basic HTML file. But there are a few noteworthy thi
 
 First, notice that the page loads two script files. It loads the minified jQuery library (jquery.min.js) from a content delivery network (CDN) so that you don't have to download jQuery and place it in your project. It also loads the controller code (hello.js) from the application's path.
 
-Note that the two `<p>` tags have ids. These help jQuery to reference the HTML elements and update the text with the `id` and `content` properties of the `Greeting` JSON received from the REST service.
+Note that the two `<p>` tags have `class` attributes with values of `greeting-id` and `greeting-content` respectively. These help jQuery to reference the HTML elements and update the text with the values from the `id` and `content` properties in the JSON received from the REST service.
 
 
 Make the application executable
