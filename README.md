@@ -62,9 +62,25 @@ $(function(){
 });
 ```
 
-This controller module is represented as a simple JavaScript function. It uses jQuery's `$.ajax()` method to consume the REST service at http://rest-service.guides.spring.io/greeting.
+This controller module is represented as a simple JavaScript function. It uses jQuery's `$.ajax()` method to consume the REST service at http://rest-service.guides.spring.io/greeting. If successful, it will assign the JSON received to `data`, effectively making it a `Greeting` model object. The `id` and `content` are then appended to the `greeting-id` and `greeting-content` DOM elements respectively.
 
-If successful, it will assign the JSON received to `data`, effectively making it a `Greeting` model object. The `id` and `content` are then appended to the `greeting-id` and `greeting-content` DOM elements respectively.
+Note how this function is declared. It makes use of the jQuery ready event to prevent execution of the AJAX request until the document is ready.
+
+```javascript
+$(function() {
+    // DOM is ready
+});
+```
+
+The previous code is functionally equivalent to the following:
+
+```javascript
+$("document").ready(function() {
+    // DOM is ready
+});
+```
+
+One final thing to note is the use of the jQuery promise `.then()`. This directs jQuery to execute the anonymous function when the `$.ajax()` method completes, passing the `data` result from the completed AJAX request.
 
 
 Create the Application Page
