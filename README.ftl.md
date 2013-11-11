@@ -30,21 +30,6 @@ What you will need
  - An internet connection
 
 
-How to complete this guide
---------------------------
-
-Like all Spring's [Getting Started guides](/guides/gs), you can start from scratch and complete each step, or you can bypass basic setup steps that are already familiar to you. Either way, you end up with working code.
-
-To **start from scratch**, move on to [Create a jQuery Controller](#scratch). When you are finished, you can compare your code with the sample code.
-
-To **run the sample code**, do the following:
-
- - [Download][zip] and unzip the source repository for this guide, or clone it using [Git][u-git]:
-`git clone https://github.com/spring-guides/${project_id}.git`
- - cd into `${project_id}/complete`.
- - Jump ahead to [Test the client](#test).
-
-
 <a name="scratch"></a>
 Create a jQuery Controller
 --------------------------
