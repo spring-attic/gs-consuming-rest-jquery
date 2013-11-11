@@ -17,7 +17,7 @@ The service will respond with a [JSON][u-json] representation of a greeting:
 {"id":1,"content":"Hello, World!"}
 ```
 
-The client will render the ID and content into the DOM.
+The jQuery client will render the ID and content into the DOM.
 
 
 What you will need
@@ -52,7 +52,7 @@ First, you will create the jQuery controller module that will consume the REST s
 
 `hello.js`
 ```js
-$(function(){
+$("document").ready(function() {
     $.ajax({
         url: "http://rest-service.guides.spring.io/greeting"
     }).then(function(data) {
@@ -64,66 +64,13 @@ $(function(){
 
 This controller module is represented as a simple JavaScript function. It uses jQuery's `$.ajax()` method to consume the REST service at http://rest-service.guides.spring.io/greeting. If successful, it will assign the JSON received to `data`, effectively making it a `Greeting` model object. The `id` and `content` are then appended to the `greeting-id` and `greeting-content` DOM elements respectively.
 
-Note how this function is declared. It makes use of the jQuery ready event to prevent execution of the AJAX request until the document is ready.
-
-```javascript
-$(function() {
-    // DOM is ready
-});
-```
-
-The previous code is functionally equivalent to the following:
-
-```javascript
-$("document").ready(function() {
-    // DOM is ready
-});
-```
-
-One final thing to note is the use of the jQuery promise `.then()`. This directs jQuery to execute the anonymous function when the `$.ajax()` method completes, passing the `data` result from the completed AJAX request.
+Note the use of the jQuery promise `.then()`. This directs jQuery to execute the anonymous function when the `$.ajax()` method completes, passing the `data` result from the completed AJAX request.
 
 
 Create the Application Page
 ---------------------------
 
 Now that you have a jQuery controller, you will create the HTML page that will load the client into the user's web browser:
-
-`index.html`
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Hello jQuery</title>
-    </head>
-
-    <body>
-        <div>
-            <p>The ID is </p>
-            <p>The content is </p>
-        </div>
-    </body>
-</html>
-```
-
-This is a basic HTML file, but it can be modified to make it more functional. Add the following two script tags within the `<head>` section.
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="hello.js"></script>
-```
-
-The first script tag loads the minified jQuery library (jquery.min.js) from a content delivery network (CDN) so that you don't have to download jQuery and place it in your project. It also loads the controller code (hello.js) from the application's path.
-
-Now modify the `<p>` tags to include `class` attributes. Change the first to have a value of `greeting-id` and the second to have a value of `greeting-content` respectively. 
-
-```html
-<p class="greeting-id">The ID is </p>
-<p class="greeting-content">The content is </p>
-```
-
-These `class` attributes help jQuery to reference the HTML elements and update the text with the values from the `id` and `content` properties of the JSON received from the REST service.
-
-After making the modifications, your `index.html` should look like the completed version: 
 
 `index.html`
 ```html
@@ -143,6 +90,24 @@ After making the modifications, your `index.html` should look like the completed
     </body>
 </html>
 ```
+
+Note the following two script tags within the `<head>` section.
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="hello.js"></script>
+```
+
+The first script tag loads the minified jQuery library (jquery.min.js) from a content delivery network (CDN) so that you don't have to download jQuery and place it in your project. It also loads the controller code (hello.js) from the application's path.
+
+Also note that the `<p>` tags include `class` attributes.
+
+```html
+<p class="greeting-id">The ID is </p>
+<p class="greeting-content">The content is </p>
+```
+
+These `class` attributes help jQuery to reference the HTML elements and update the text with the values from the `id` and `content` properties of the JSON received from the REST service.
 
 
 <a name="test"></a>
