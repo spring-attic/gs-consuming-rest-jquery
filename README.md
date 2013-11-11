@@ -34,7 +34,7 @@ How to complete this guide
 
 Like all Spring's [Getting Started guides](/guides/gs), you can start from scratch and complete each step, or you can bypass basic setup steps that are already familiar to you. Either way, you end up with working code.
 
-To **start from scratch**, move on to [Create the Application Page](#scratch). When you are finished, you can compare your code with the sample code.
+To **start from scratch**, move on to [Create a jQuery Controller](#scratch). When you are finished, you can compare your code with the sample code.
 
 To **run the sample code**, do the following:
 
