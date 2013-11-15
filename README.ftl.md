@@ -36,7 +36,7 @@ Create a jQuery Controller
 
 First, you will create the jQuery controller module that will consume the REST service: 
 
-    <@snippet path="hello.js" prefix="complete"/>
+    <@snippet path="public/hello.js" prefix="complete"/>
 
 This controller module is represented as a simple JavaScript function. It uses jQuery's `$.ajax()` method to consume the REST service at http://rest-service.guides.spring.io/greeting. If successful, it will assign the JSON received to `data`, effectively making it a `Greeting` model object. The `id` and `content` are then appended to the `greeting-id` and `greeting-content` DOM elements respectively.
 
@@ -48,7 +48,7 @@ Create the Application Page
 
 Now that you have a jQuery controller, you will create the HTML page that will load the client into the user's web browser:
 
-    <@snippet path="index.html" prefix="complete"/>
+    <@snippet path="public/index.html" prefix="complete"/>
 
 Note the following two script tags within the `<head>` section.
 
@@ -69,11 +69,17 @@ Also note that the `<p>` tags include `class` attributes.
 These `class` attributes help jQuery to reference the HTML elements and update the text with the values from the `id` and `content` properties of the JSON received from the REST service.
 
 
-<a name="test"></a>
-Test the client
----------------
+<a name="run"></a>
+Run the client
+--------------
 
-You can now open the `index.html` page in your browser, where you see:
+You can now run the app using the Spring Boot CLI (Command Line Interface). Spring Boot includes an embedded Tomcat server, which offers a simple approach to serving web content. See [Building an Application with Spring Boot][gs-spring-boot] for more information about installing and using the CLI.
+
+```sh
+spring run app.groovy
+```
+
+open http://localhost:8080 in your browser, where you see:
 
 ![Model data retrieved from the REST service is rendered into the DOM.](images/hello.png)
 
@@ -83,9 +89,10 @@ The ID value will increment each time you refresh the page.
 Summary
 -------
 
-Congratulations! You've just developed an jQuery client that consumes a Spring-based RESTful web service.
+Congratulations! You've just developed a jQuery client that consumes a Spring-based RESTful web service.
 
 [gs-rest-service]: /guides/gs-rest-service/
+[gs-spring-boot]: /guides/gs-spring-boot/
 [zip]: https://github.com/spring-guides/${project_id}/archive/master.zip
 <@u_rest/>
 <@u_json/>
