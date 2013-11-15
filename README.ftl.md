@@ -79,7 +79,7 @@ You can now run the app using the Spring Boot CLI (Command Line Interface). Spri
 $ spring run app.groovy
 ```
 
-open http://localhost:8080 in your browser, where you see:
+Once the app starts, open http://localhost:8080 in your browser, where you see:
 
 ![Model data retrieved from the REST service is rendered into the DOM.](images/hello.png)
 
