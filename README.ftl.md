@@ -76,7 +76,7 @@ Run the client
 You can now run the app using the Spring Boot CLI (Command Line Interface). Spring Boot includes an embedded Tomcat server, which offers a simple approach to serving web content. See [Building an Application with Spring Boot][gs-spring-boot] for more information about installing and using the CLI.
 
 ```sh
-spring run app.groovy
+$ spring run app.groovy
 ```
 
 open http://localhost:8080 in your browser, where you see:
