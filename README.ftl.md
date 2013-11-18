@@ -91,8 +91,8 @@ Summary
 
 Congratulations! You've just developed a jQuery client that consumes a Spring-based RESTful web service.
 
-[gs-rest-service]: /guides/gs-rest-service/
-[gs-spring-boot]: /guides/gs-spring-boot/
+[gs-rest-service]: /guides/gs/rest-service/
+[gs-spring-boot]: /guides/gs/spring-boot/
 [zip]: https://github.com/spring-guides/${project_id}/archive/master.zip
 <@u_rest/>
 <@u_json/>
