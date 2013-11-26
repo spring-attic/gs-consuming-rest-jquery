@@ -24,7 +24,7 @@ There's more to building RESTful web services than what is covered here. You can
 [gs-consuming-rest-ios]: /guides/gs/consuming-rest-ios/
 [gs-consuming-rest-android]: /guides/gs/consuming-rest-android/
 [gs-consuming-rest-xml-android]: /guides/gs/consuming-rest-xml-android/
-[gs-rest-service]: /guides/gs/rest-service/
+[gs-rest-service-cors]: /guides/gs/rest-service-cors/
 [gs-actuator-service]: /guides/gs/actuator-service/
 [gs-rest-hateoas]: /guides/gs/rest-hateoas/
 
