@@ -12,7 +12,7 @@ There's more to building RESTful web services than what is covered here. You can
 * [Consuming a RESTful Web Service from iOS][gs-consuming-rest-ios]
 * [Consuming a RESTful Web Service with Spring for Android][gs-consuming-rest-android]
 * [Consuming XML from a RESTful Web Service with Spring for Android][gs-consuming-rest-xml-android]
-* [Building a RESTful Web Service][gs-rest-service]
+* [Building a RESTful Web Service with CORS][gs-rest-service-cors]
 * [Building a RESTful Web Service with Spring Boot Actuator][gs-actuator-service]
 * [Building a Hypermedia-Driven RESTful Web Service][gs-rest-hateoas]
 
