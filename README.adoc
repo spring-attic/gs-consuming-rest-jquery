@@ -116,3 +116,6 @@ The ID value will increment each time you refresh the page.
 
 Congratulations! You've just developed a jQuery client that consumes a Spring-based RESTful web service.
 
+
+include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
+
