@@ -1,4 +1,4 @@
-:spring_boot_version: 2.1.4.RELEASE
+:spring_boot_version: 2.1.6.RELEASE
 :gs-rest-service-cors: link:/guides/gs/rest-service-cors/
 :gs-spring-boot: link:/guides/gs/spring-boot/
 :toc:
